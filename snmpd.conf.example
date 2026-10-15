@@ -1,0 +1,9 @@
+# Example entries for /etc/snmp/snmpd.conf on Ubuntu
+# Lab subnet: 192.168.50.0/24
+# Ubuntu host: 192.168.50.10
+
+rocommunity public 192.168.50.0/24
+rocommunity6 public default -V systemonly
+agentAddress udp:192.168.50.10:161
+
+# Lab-only example. Prefer SNMPv3 and tighter access controls in production.

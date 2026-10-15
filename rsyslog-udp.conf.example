@@ -1,0 +1,7 @@
+# Example entries for /etc/rsyslog.conf on Ubuntu
+# Receives remote syslog over UDP port 514.
+
+module(load="imudp")
+input(type="imudp" port="514")
+
+# Review distribution-specific configuration and firewall rules before use.

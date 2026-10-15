@@ -1,0 +1,12 @@
+! Example Cisco IOS commands for the isolated GNS3 lab
+! Router monitoring interface: 192.168.50.1/24
+! Ubuntu syslog receiver:     192.168.50.10
+
+snmp-server community public RO
+logging host 192.168.50.10
+logging trap informational
+service timestamps log datetime msec
+
+! Lab-only warning:
+! Replace the example community configuration with a secure SNMPv3 design
+! before using a similar configuration in a real network.
