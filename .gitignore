@@ -1,0 +1,5 @@
+# Local/editor/temporary files
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
